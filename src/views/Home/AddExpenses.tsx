@@ -25,7 +25,6 @@ import {
 import { getExpensesById } from "@/services/expensesService";
 import { supabase } from "@/supabaseClient";
 import { BreadCrumbProps } from "@/types/Breadcrumb";
-import { DevTool } from "@hookform/devtools";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useQuery } from "@tanstack/react-query";
 
@@ -57,7 +56,6 @@ const AddExpenses = () => {
     watch,
     setValue,
     reset,
-    control,
     formState: { errors },
   } = useForm<FieldValues, ExpensesSchemaType>({
     resolver: zodResolver(expensesSchema),

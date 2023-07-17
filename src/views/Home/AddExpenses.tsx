@@ -275,9 +275,6 @@ const AddExpenses = () => {
           </div>
         </div>
       </Container>
-
-      {/* React Hook Form Devtool only rendered on development environment to debug the form fields */}
-      <DevTool control={control} />
     </>
   );
 };
